@@ -1,0 +1,82 @@
+## **System Requirements to Run TrafficFlow Dashboard on Local PC:**
+
+### **1. Core Requirements:**
+- **Operating System:** Windows 10/11, macOS 10.14+, or Linux (Ubuntu 18.04+)
+- **RAM:** Minimum 4GB, Recommended 8GB+
+- **Storage:** At least 2GB free space for project and dependencies
+- **Internet Connection:** Required for initial package downloads
+
+### **2. Software Prerequisites:**
+
+#### **A. Node.js (REQUIRED)**
+- **Version:** Node.js 18.0.0 or higher
+- **Download:** https://nodejs.org/en/download/
+- **Verify installation:**
+  ```bash
+  node --version
+  npm --version
+  ```
+
+#### **B. Package Manager (Choose One):**
+**Option 1: pnpm (Recommended - Faster & More Efficient)**
+```bash
+npm install -g pnpm
+```
+
+**Option 2: npm (Built-in with Node.js)**
+- Already included with Node.js installation
+
+**Option 3: yarn (Alternative)**
+```bash
+npm install -g yarn
+```
+
+### **3. Project Dependencies (Auto-installed):**
+When you run `pnpm install`, these will be automatically downloaded:
+
+#### **Core Framework:**
+- `react@^19.1.1` - UI framework
+- `react-dom@^19.1.1` - DOM rendering
+- `typescript@^5.5.3` - Type checking
+- `vite@^5.4.1` - Build tool
+
+#### **UI Components:**
+- `@radix-ui/react-*` (40+ packages) - Accessible components
+- `lucide-react@^0.462.0` - Icons
+- `tailwindcss@^3.4.11` - CSS framework
+
+#### **Development Tools:**
+- `eslint@^9.9.0` - Code linting
+- `postcss@^8.4.47` - CSS processing
+- `autoprefixer@^10.4.20` - CSS vendor prefixes
+
+### **4. Installation Steps:**
+
+```bash
+# Step 1: Download project files (from MGX Export button)
+# Step 2: Navigate to project folder
+cd your-project-folder
+
+# Step 3: Install dependencies
+pnpm install
+# OR
+npm install
+
+# Step 4: Start development server
+pnpm run dev
+# OR  
+npm run dev
+
+# Step 5: Open browser to http://localhost:5173
+```
+
+### **5. Optional Tools (Recommended):**
+- **VS Code** - Code editor with React/TypeScript support
+- **Git** - Version control (if you want to track changes)
+- **Chrome/Firefox** - Modern browser with developer tools
+
+### **6. Disk Space Requirements:**
+- **Project files:** ~50MB
+- **Node modules:** ~400MB
+- **Total:** ~500MB
+
