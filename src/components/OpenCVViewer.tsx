@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { useEffect, useState } from "react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
 import { 
   Camera, 
   Play, 
@@ -18,7 +19,6 @@ export default function OpenCVViewer() {
   const [detectedPedestrians, setDetectedPedestrians] = useState(0);
   const [frameRate, setFrameRate] = useState(30);
 
-  // Simulate real-time detection updates
   useEffect(() => {
     const interval = setInterval(() => {
       setDetectedVehicles(Math.floor(Math.random() * 15) + 5);
